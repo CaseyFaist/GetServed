@@ -5,7 +5,8 @@ name = "getserved"
 version = "0.0.1"
 
 dependencies = [
-    "fastapi~=0.110"
+    "fastapi~=0.110",
+    "uvicorn"
 ]
 
 [project.optional-dependencies]
