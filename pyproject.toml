@@ -11,3 +11,20 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["mypy", "ruff"]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_untyped_defs = true
+
+[tool.ruff]
+lint.extend-select = [
+    "D"
+]
+# shuush
+lint.ignore = [
+    "D400",
+    "D415",
+    "D211",
+    "D213",
+    "D203"
+]
